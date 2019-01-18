@@ -9,4 +9,5 @@ Evaluation of four distinct epigenomic mapping tools - including the main script
 - segemehl.
 
 In addition, the script is provided to simulate epigenomic reads and then to use the for running the four mapping tools.
+For the simulation the tool Sherman (https://github.com/FelixKrueger/Sherman) has been used.
 
