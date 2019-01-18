@@ -7,3 +7,6 @@ Evaluation of four distinct epigenomic mapping tools - including the main script
 - Bsmap.
 - BS-seeker3.
 - segemehl.
+
+In addition, the script is provided to simulate epigenomic reads and then to use the for running the four mapping tools.
+
