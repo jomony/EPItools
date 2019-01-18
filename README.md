@@ -8,6 +8,6 @@ Evaluation of four distinct epigenomic mapping tools - including the main script
 - **BS-Seeker3**
 - **segemehl**
 
-In addition, the script is provided to simulate epigenomic reads and then to use the for running the four mapping tools.
+The script is provided to simulate epigenomic reads and for running the above four mapping tools.
 For the simulation the tool by **Sherman** (https://github.com/FelixKrueger/Sherman) was used.
 
