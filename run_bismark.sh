@@ -42,6 +42,44 @@ then
 		GENOME=genome_wheat
 	        CHR=LG1_wheat.fasta
 	        id="wheat"
+	elif [ $1 == "alyr" ]
+	then
+		echo "alyr"
+		id="alyr"
+		mkdir $id; cd $id;
+		GENOME=genome_${id}
+		CHR=genome_${id}.fasta
+		cp /mnt/INET2/raw_data/thomas.nussbaumer/epigenomics/seq/Arabidopsis_lyrata.v.1.0.dna.toplevel.fa .
+		mkdir genome_${id}
+		mv Arabidopsis_lyrata.v.1.0.dna.toplevel.fa ${GENOME}
+		cd ${GENOME}
+		cat Arabidopsis_lyrata.v.1.0.dna.toplevel.fa > ${CHR}
+		cd ..
+	elif [ $1 == "gmax" ]
+	then
+		echo "gmax"
+		id="gmax"
+                mkdir $id; cd $id;
+                GENOME=genome_${id}
+                CHR=genome_${id}.fasta
+                cp /mnt/INET2/raw_data/thomas.nussbaumer/epigenomics/seq/Glycine_max.Glycine_max_v2.1.dna.toplevel.fa .
+                mkdir genome_${id}
+                mv Glycine_max.Glycine_max_v2.1.dna.toplevel.fa ${GENOME}
+                cd ${GENOME}
+                cat Glycine_max.Glycine_max_v2.1.dna.toplevel.fa > ${CHR}
+                cd ..
+	elif [ $1 == "osativa" ]
+	then
+		id="osativa"
+                mkdir $id; cd $id;
+		GENOME=genome_${id}
+		CHR=genome_${id}.fasta
+		cp /mnt/INET2/raw_data/thomas.nussbaumer/epigenomics/seq/Oryza_sativa.IRGSP-1.0.dna.toplevel.fa .
+                mkdir genome_${id}
+                mv Oryza_sativa.IRGSP-1.0.dna.toplevel.fa ${GENOME}
+                cd ${GENOME}
+                cat Glycine_max.Glycine_max_v2.1.dna.toplevel.fa > ${CHR}
+                cd ..
 	else
 		exit
 	fi
@@ -62,6 +100,26 @@ then
 		cd wheat
 		GENOME=genome_wheat
 	fi
+
+	if [ $1 == "alyr" ]
+	then
+		cd alyr
+		echo $(pwd)
+		GENOME=genome_alyr
+	fi
+
+	if [ $1 == "gmax" ]
+	then
+		cd gmax
+		GENOME=genome_gmax
+	fi
+
+	if [ $1 == "osativa" ]
+	then
+		cd osativa
+		GENOME=genome_osativa
+	fi
+
 	bismark_genome_preparation ${GENOME}
 fi
 
@@ -84,6 +142,27 @@ then
 		GENOME=genome_wheat
 		FASTQ=/mnt/INET2/raw_data/thomas.nussbaumer/epigenomics/seq/ERR1141918_1.fastq
 		id=wheat
+	fi
+
+	if [ $1 == "alyr" ]
+	then
+		cd alyr
+		GENOME=genome_alyr
+		FASTQ=
+	fi
+
+	if [ $1 == "gmax" ]
+	then
+		cd gmax
+		GENOME=genome_gmax
+		FASTQ=
+	fi
+
+	if [ $1 == "osativa" ]
+	then
+		cd osativa
+		GENOME=genome_osativa
+		FASTQ=
 	fi
 
 	FASTQ_s=$(basename $FASTQ)
