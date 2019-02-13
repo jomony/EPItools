@@ -148,21 +148,21 @@ then
 	then
 		cd alyr
 		GENOME=genome_alyr
-		FASTQ=
+		FASTQ=/mnt/INET2/epigenom/src/new_fastq/SRR3880297_1.fastq
 	fi
 
 	if [ $1 == "gmax" ]
 	then
 		cd gmax
 		GENOME=genome_gmax
-		FASTQ=
+		FASTQ=/mnt/INET2/epigenom/src/new_fastq/SRR5079790.fastq
 	fi
 
 	if [ $1 == "osativa" ]
 	then
 		cd osativa
 		GENOME=genome_osativa
-		FASTQ=
+		FASTQ=/mnt/INET2/epigenom/src/new_fastq/SRR7265433.fastq
 	fi
 
 	FASTQ_s=$(basename $FASTQ)
