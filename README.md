@@ -8,7 +8,7 @@ Evaluation of four distinct epigenomic mapping tools - including the main script
 - **BS-Seeker3** (Huang et al., 2018, https://www.ncbi.nlm.nih.gov/pubmed/29614954).
 - **segemehl** (Hoffmann et al., 2009, https://www.ncbi.nlm.nih.gov/pubmed/19750212).
 
-The benchmark tests included both dicots (Arabidosis thaliana, Arabidopsis lyrata and Glycine max) and monocots (Triticum aestivum and Oryza sativa).
+The benchmark tests included both dicots (*Arabidopsis thaliana*, *Arabidopsis lyrata* and *Glycine max*) and monocots (*Triticum aestivum* and *Oryza sativa*).
 
 The github repository contains all single scripts and also the scripts used to run
 all four tools together for each of the five genomes.
