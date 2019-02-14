@@ -13,7 +13,7 @@ The benchmark tests included both dicots (<em>Arabidopsis thaliana</em>, *Arabid
 The github repository contains all single scripts and also the scripts used to run
 the four tools together for each of the five genomes.
 
-We added a script for simulating epigenomic reads and also for running the above four mapping tools.
-The tool by **Sherman** (https://github.com/FelixKrueger/Sherman) was used for the simulating the reads.
-The simulation and performance of the tools are described in our study (Omony, Nussbaumer and Gutzat, in Review).
+We also added scripts for simulating epigenomic reads and also for running the above four mapping tools.
+The tool by **Sherman** (https://github.com/FelixKrueger/Sherman) was used for simulating the reads.
+The simulation criteria and assessment of the performance of the tools is described in our study (Omony, Nussbaumer and Gutzat, in Review).
 
