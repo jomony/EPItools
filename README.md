@@ -8,12 +8,12 @@ Evaluation of four distinct epigenomic mapping tools - including the main script
 - **BS-Seeker3**
 - **segemehl**
 
-The benchmark tests incuded the dicots Arabidosis thaliana, Arabidopsis lyrata and Glycine max while also 
-monocots Triticum aestivum and Oryza sativa.
+The benchmark tests included both dicots (Arabidosis thaliana, Arabidopsis lyrata and Glycine max) and monocots (Triticum aestivum and Oryza sativa).
 
-The github repository contains all single scripts but also the scripts to run
+The github repository contains all single scripts and also the scripts used to run
 all four tools together for each of the five genomes.
-In addition, we added a script that is used to simulate epigenomic reads and also for running the above four mapping tools.
-The tool by **Sherman** (https://github.com/FelixKrueger/Sherman) was used for the simulation.
-The simulation and performance of the tools have been described in our study (Omony, Nussbaumer and Gutzat, in Review).
+
+We added a script for simulating epigenomic reads and also for running the above four mapping tools.
+The tool by **Sherman** (https://github.com/FelixKrueger/Sherman) was used for the simulating the reads.
+The simulation and performance of the tools are described in our study (Omony, Nussbaumer and Gutzat, in Review).
 
