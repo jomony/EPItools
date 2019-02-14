@@ -11,7 +11,7 @@ Evaluation of four distinct epigenomic mapping tools - including the main script
 The benchmark tests included both dicots (<em>Arabidopsis thaliana</em>, *Arabidopsis lyrata* and *Glycine max*) and monocots (*Triticum aestivum* and *Oryza sativa*).
 
 The github repository contains all single scripts and also the scripts used to run
-all four tools together for each of the five genomes.
+the four tools together for each of the five genomes.
 
 We added a script for simulating epigenomic reads and also for running the above four mapping tools.
 The tool by **Sherman** (https://github.com/FelixKrueger/Sherman) was used for the simulating the reads.
