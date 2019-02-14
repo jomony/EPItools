@@ -14,8 +14,7 @@ then
 	if [ $1 == "athal" ]
 	then
 		mkdir athal; cd athal;
-		cp /mnt/INET2/raw_data/thomas.nussbaumer/epigenomics/seq/Arabidopsis_thaliana.TAIR10.dna.toplevel.fa.gz .
-		gunzip Arabidopsis_thaliana.TAIR10.dna.toplevel.fa.gz
+		cp /mnt/INET2/raw_data/thomas.nussbaumer/epigenomics/seq/Arabidopsis_thaliana.TAIR10.dna.toplevel.fa .
 		mkdir genome_athal
 		mv Arabidopsis_thaliana.TAIR10.dna.toplevel.fa genome_athal
 		GENOME=genome_athal
@@ -42,6 +41,19 @@ then
 		GENOME=genome_wheat
 	        CHR=LG1_wheat.fasta
 	        id="wheat"
+        elif [ $1 == "wheat1A" ]
+        then
+                mkdir wheat1A; cd wheat1A;
+                cp /mnt/INET2/epigenom/simulation/sherman/genome/wheat/iwgsc_refseqv1.0_chr1A.fsa.zip .
+                unzip iwgsc_refseqv1.0_chr1A.fsa.zip
+                mkdir genome_wheat1A
+                mv iwgsc_refseqv1.0_chr1A.fsa genome_wheat1A
+                cd genome_wheat1A
+                cat iwgsc_refseqv1.0_chr1A.fsa > LG1A_wheat.fasta
+                cd ..
+                GENOME=genome_wheat1A
+                CHR=LG1A_wheat.fasta
+                id="wheat1A"
 	elif [ $1 == "alyr" ]
 	then
 		echo "alyr"
@@ -101,6 +113,12 @@ then
 		GENOME=genome_wheat
 	fi
 
+        if [ $1 == "wheat1A" ]
+        then
+                cd wheat1A
+                GENOME=genome_wheat1A
+        fi
+
 	if [ $1 == "alyr" ]
 	then
 		cd alyr
@@ -144,6 +162,14 @@ then
 		id=wheat
 	fi
 
+        if [ $1 == "wheat1A" ]
+        then
+                cd wheat1A
+                GENOME=genome_wheat1A
+                FASTQ=/mnt/INET2/raw_data/thomas.nussbaumer/epigenomics/seq/ERR1141918_1.fastq
+                id=wheat1A
+        fi
+
 	if [ $1 == "alyr" ]
 	then
 		cd alyr
@@ -166,7 +192,7 @@ then
 	fi
 
 	FASTQ_s=$(basename $FASTQ)
-	for PID in 5 #20 #15 10 5 1
+	for PID in 20 #20 #15 10 5 1
 	do
 		OUTPUT=""
 		tmp=$(mktemp)
