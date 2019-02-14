@@ -3,10 +3,10 @@ Comparison of the performance of epigenetic (bisulfite-) data mapping and analys
 
 Evaluation of four distinct epigenomic mapping tools - including the main scripts to search for coherence and over-laps of mapped reads from each tool (Omony, Nussbaumer and Gutzat, in Review).
 
-- **Bismark**
-- **BSMap**
-- **BS-Seeker3**
-- **segemehl**
+- **Bismark** (Krueger and Andrews, 2011, http://www.ncbi.nlm.nih.gov/pubmed/21493656).
+- **BSMap** (Xi and Li, 2009, https://www.ncbi.nlm.nih.gov/pubmed/19635165).
+- **BS-Seeker3** (Huang et al., 2018, https://www.ncbi.nlm.nih.gov/pubmed/29614954).
+- **segemehl** (Hoffmann et al., 2009, https://www.ncbi.nlm.nih.gov/pubmed/19750212).
 
 The benchmark tests included both dicots (Arabidosis thaliana, Arabidopsis lyrata and Glycine max) and monocots (Triticum aestivum and Oryza sativa).
 
