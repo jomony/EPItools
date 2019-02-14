@@ -27,7 +27,7 @@ extract_from_ncbi()
 	done
 }
 
-#extract_from_ncbi
+extract_from_ncbi
 
 extract_fastq_from_sra()
 {
