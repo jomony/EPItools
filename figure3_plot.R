@@ -1,5 +1,5 @@
 
-data=read.csv("figure3_memory_plot_input.txt",sep="	",header=F)
+data=read.csv("figure3_memory_plot_input.txt",sep="\t",header=F)
 print(data)
 svg("figure3_memory_plot_input.svg")
 par(oma=c(10,0,0,0))
