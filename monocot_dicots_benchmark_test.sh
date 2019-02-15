@@ -2,7 +2,6 @@
 
 # -----------------------------------------------------------
 
-#OPT=SUB
 OPT=ALL
 
 # -----------------------------------------------------------
@@ -10,8 +9,8 @@ OPT=ALL
 function bismark {
 	for GID in athal gmax alyr osativa wheat1A
 	do
-		#./src/run_bismark.sh $GID 0 $OPT
-		#./src/run_bismark.sh $GID 1 $OPT
+		./src/run_bismark.sh $GID 0 $OPT
+		./src/run_bismark.sh $GID 1 $OPT
 		for STEP in {2..2}
 		do
 			/usr/bin/time -v ./src/run_bismark.sh $GID $STEP $OPT 2> BISMARK_${GID}_${OPT}_time.txt
