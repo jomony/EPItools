@@ -18,7 +18,7 @@ function bismark {
 	done
 }
 
-bismark
+#bismark
 
 
 # -----------------------------------------------------------
@@ -30,23 +30,26 @@ function bsmap {
 		/usr/bin/time -v ./src/run_bsmap.sh $GID $OPT 2> BSMAP_${GID}_${OPT}_time.txt
 	done
 }
-bsmap
-
-exit
-
-
+#bsmap
 
 # -----------------------------------------------------------
 
 function segemehl {
-	#./src/run_segemehl.sh $GID 0 $OPT
-	#./src/run_segemehl.sh $GID 1 $OPT
-	for STEP in {2..2}
+	rm -rf segemehl
+	for GID in athal gmax alyr osativa wheat1A
 	do
-		./src/run_segemehl.sh $GID $STEP $OPT
+		echo "::",$GID
+		./run_segemehl.sh $GID 0 $OPT
+		./run_segemehl.sh $GID 1 $OPT
+		for STEP in {2..2}
+		do
+			/usr/bin/time -v ./run_segemehl.sh $GID $STEP $OPT 2> SEGEMEHL_${GID}_${OPT}_time.txt
+		done
 	done
 }
-#segemehl
+segemehl
+
+exit
 
 # -----------------------------------------------------------
 
