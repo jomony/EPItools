@@ -272,7 +272,7 @@ then
 		elif [ $1 == "osativa" ]
 		then
 			id="osativa"; cd $id
-			FASTQ=/proj/BIB/EPItools-master/my_fastq/SRR726543_1.fastq
+			FASTQ=/proj/BIB/EPItools-master/my_fastq/SRR7265433.fastq
                         CHR=genome_${id}/genome_${id}.fasta
                         if [ $OPT == "ALL" ]
                         then
