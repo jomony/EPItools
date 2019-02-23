@@ -1,8 +1,8 @@
-PATH=$PATH:/naslx/projects/pr74ma/ge34juq2/EPIGENOMICS/old/epigenome_evaluation-0.1/apps/bs3-dev1/
-BS_ALIGN=/naslx/projects/pr74ma/ge34juq2/EPIGENOMICS/old/epigenome_evaluation-0.1/apps/bs3-dev1/bs_align/
-SNAP_MAPPER_PATH=/naslx/projects/pr74ma/ge34juq2/EPIGENOMICS/old/epigenome_evaluation-0.1/apps/snap-aligner-1.0beta.23/bin/snap-aligner
-MY_GENOMES=/naslx/projects_mpiio/pr74ma/ge34juq2/EPIGENOMICS/revision2/my_genomes/
-MY_FASTQ=/naslx/projects_mpiio/pr74ma/ge34juq2/EPIGENOMICS/revision2/my_fastq
+PATH=$PATH:PLACEHOLDER/epigenome_evaluation-0.1/apps/bs3-dev1/
+BS_ALIGN=PLACEHOLDER/epigenome_evaluation-0.1/apps/bs3-dev1/bs_align/
+SNAP_MAPPER_PATH=PLACEHOLDER/EPIGENOMICS/old/epigenome_evaluation-0.1/apps/snap-aligner-1.0beta.23/bin/snap-aligner
+MY_GENOMES=PLACEHOLDER/EPIGENOMICS/revision2/my_genomes/
+MY_FASTQ=PLACEHOLDER/EPIGENOMICS/revision2/my_fastq
 
 MY_CWD=$(pwd)
 
