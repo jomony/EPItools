@@ -15,5 +15,5 @@ the four tools together for each of the five genomes.
 
 We also added scripts for simulating epigenomic reads and also for running the above four mapping tools.
 The tool by **Sherman** (https://github.com/FelixKrueger/Sherman) was used for simulating the reads.
-The simulation criteria and assessment of the performance of the tools is described in our study (Omony, Nussbaumer and Gutzat, in Review).
+The simulation criteria and assessment of the performance of the tools is described in our study (Omony et al. 2019, https://www.ncbi.nlm.nih.gov/pubmed/31220217).
 
